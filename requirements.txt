@@ -1,0 +1,9 @@
+python==3.8.19 
+torch==1.7.0
+triton==2.1.0
+numpy==1.24.3
+matplotlib==3.7.5 
+transformers==4.40.0 
+tokenizers==0.19.1
+tqdm==4.66.5 
+timm==0.4.5.
