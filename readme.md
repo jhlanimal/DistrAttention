@@ -12,10 +12,10 @@ In the ViT experiment, during runtime, the ```models``` folder under each corres
 In both LLaMA and BERT, the attention module needs to be replaced with the DistrAttention module.
 
 ## Dataset
-ImageNet(https://image-net.org/index.php)\
-CIFAR-100(https://www.cs.toronto.edu/~kriz/cifar.html)\
-CIFAR-10(https://www.cs.toronto.edu/~kriz/cifar.html)\
-iNaturalist 2018(https://github.com/visipedia/inat_comp/tree/master/2018)\
-iNaturalist 2019(https://github.com/visipedia/inat_comp/tree/master/2019)\
-MathInstruct(https://huggingface.co/datasets/TIGER-Lab/MathInstruct/tree/main)
+[ImageNet](https://image-net.org/index.php)
+[CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)
+[CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
+[iNaturalist 2018](https://github.com/visipedia/inat_comp/tree/master/2018)
+[iNaturalist 2019](https://github.com/visipedia/inat_comp/tree/master/2019)
+[MathInstruct](https://huggingface.co/datasets/TIGER-Lab/MathInstruct/tree/main)
 
