@@ -1100,7 +1100,7 @@ def _fwd_kernel_flash_4_128(
     # initialize pointer to m and l
     lse_i = tl.zeros([BLOCK_M], dtype=tl.float32) - float("inf")
     m_i = tl.zeros([BLOCK_M], dtype=tl.float32) - float("inf")
-    acc_o = tl.zeros([BLOCK_M, 64], dtype=tl.float32)
+    acc_o = tl.zeros([BLOCK_M, 128], dtype=tl.float32)
     # load q: it will stay in SRAM throughout
     # [2022-10-30] TD: Triton bug - in the case of EVEN_M=True and EVEN_N=False, if we just call
     # tl.load(q_ptrs), we get the wrong output!
@@ -1582,7 +1582,7 @@ def _fwd_kernel_flash_2_32(
     # initialize pointer to m and l
     lse_i = tl.zeros([BLOCK_M], dtype=tl.float32) - float("inf")
     m_i = tl.zeros([BLOCK_M], dtype=tl.float32) - float("inf")
-    acc_o = tl.zeros([BLOCK_M, 64], dtype=tl.float32)
+    acc_o = tl.zeros([BLOCK_M, 32], dtype=tl.float32)
     # load q: it will stay in SRAM throughout
     # [2022-10-30] TD: Triton bug - in the case of EVEN_M=True and EVEN_N=False, if we just call
     # tl.load(q_ptrs), we get the wrong output!
@@ -1817,7 +1817,7 @@ def _fwd_kernel_flash_2_128(
     # initialize pointer to m and l
     lse_i = tl.zeros([BLOCK_M], dtype=tl.float32) - float("inf")
     m_i = tl.zeros([BLOCK_M], dtype=tl.float32) - float("inf")
-    acc_o = tl.zeros([BLOCK_M, 64], dtype=tl.float32)
+    acc_o = tl.zeros([BLOCK_M, 128], dtype=tl.float32)
     # load q: it will stay in SRAM throughout
     # [2022-10-30] TD: Triton bug - in the case of EVEN_M=True and EVEN_N=False, if we just call
     # tl.load(q_ptrs), we get the wrong output!
